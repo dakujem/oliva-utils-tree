@@ -159,7 +159,7 @@ class RecursiveTreeBuilder extends TreeBuilder implements ITreeBuilder
 	 * @param INode $node is NULL for stub nodes
 	 * @return int|string index for node
 	 */
-	protected function getChildIndex($nodeId, INode $node = NULL)
+	protected function getChildIndex($nodeId, ?INode $node = NULL)
 	{
 		if ($this->isAcceptableCallback($this->indexProcessor)) {
 			return call_user_func($this->indexProcessor, $nodeId, $node);

@@ -352,7 +352,7 @@ class MaterializedPathTreeBuilder extends TreeBuilder implements ITreeBuilder
 	 * @param INode $node is NULL for stub nodes
 	 * @return int|string index for node
 	 */
-	protected function getChildIndex($hierarchy, INode $node = NULL)
+	protected function getChildIndex($hierarchy, ?INode $node = NULL)
 	{
 		if ($this->isAcceptableCallback($this->indexProcessor)) {
 			return call_user_func($this->indexProcessor, $hierarchy, $node);

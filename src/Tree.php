@@ -33,7 +33,7 @@ class Tree implements ITree, IteratorAggregate
 	protected $root;
 
 
-	public function __construct(INode $root = NULL)
+	public function __construct(?INode $root = NULL)
 	{
 		if ($root !== NULL) {
 			$this->setRoot($root);

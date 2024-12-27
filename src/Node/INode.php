@@ -18,7 +18,7 @@ interface INode
 	 * @param INode $node
 	 * @return INode fluent
 	 */
-	public function setParent(self $node = NULL);
+	public function setParent(?self $node = NULL);
 
 
 	/**

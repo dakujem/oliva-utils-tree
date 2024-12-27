@@ -122,7 +122,7 @@ trait TreeBuilderTrait
 	 * @param callable $function
 	 * @return self fluent
 	 */
-	public function setNodeCallback(callable $function = NULL/* , ...$params */)
+	public function setNodeCallback(?callable $function = NULL/* , ...$params */)
 	{
 		if ($function !== NULL) {
 			$this->nodeCallback = [$function, array_slice(func_get_args(), 1)]; // $params here [PHP 5.6]
@@ -148,7 +148,7 @@ trait TreeBuilderTrait
 	 * @param callable $function
 	 * @return self fluent
 	 */
-	public function setDataErrorCallback(callable $function = NULL/* , ...$params */)
+	public function setDataErrorCallback(?callable $function = NULL/* , ...$params */)
 	{
 		if ($function !== NULL) {
 			$this->dataErrorCallback = [$function, array_slice(func_get_args(), 1)]; // $params here [PHP 5.6]

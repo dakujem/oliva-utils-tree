@@ -29,7 +29,7 @@ trait BareNodeTrait
 	 * @param INode $node
 	 * @return NodeBase fluent
 	 */
-	public function setParent(INode $node = NULL)
+	public function setParent(?INode $node = NULL)
 	{
 		$this->parent = $node;
 		return $this;
